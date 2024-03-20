@@ -167,22 +167,7 @@ fun ScreenContent(modifier: Modifier){
                 Text(text = stringResource(id = R.string.hitung))
             }
 
-            Spacer(Modifier.width(8.dp))
-
-            Button(
-                onClick = {
-                    panjang = ""
-                    lebar = ""
-                    luas = 0.0
-                    keliling = 0.0
-                    panjangError = false
-                    lebarError = false
-                },
-                modifier = Modifier.padding(top = 8.dp),
-                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
-            ) {
-                Text(text = stringResource(id = R.string.reset))
-            }
+            
         }
 
         if (luas != 0.0 || keliling != 0.0) {
